@@ -1,0 +1,40 @@
+.card{
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: auto;
+    border: #404040;
+    background-color: #c6e2a4;
+}
+
+.card-body{
+    background-color: #c6e2a4;
+}
+
+th{
+    background-color: #c6e2a4;
+    border: #c6e2a4;
+}
+
+td{
+    background-color: #c6e2a4;
+    border: #c6e2a4;
+}
+
+input{
+    background-color: #acc48f;
+    border: #acc48f ;
+}
+
+#card-header1{
+    background-color: #404040;
+    color: #63ba64;
+}
+
+#card-header2{
+    background-color: #404040;
+    color: #63ba64;
+    height: 58px;
+}
+
+#button{
+    background-color: #2C5F2D;
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: arial;
+    font-size: 12px;
+    background-color: rgb(116, 217, 243);
+    color: rgb(31, 23, 23);
+}
+
+#news-feed {
+    background:#45c4f6;
+    border: 1px solid #48bdf0;
+    width: 400px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 235px;
+    overflow: hidden;
+}
+
+ul#news-feed li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #1682a9;
+    margin-bottom: 5px;
+}

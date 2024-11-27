@@ -1,0 +1,27 @@
+body{
+    background-color: #5b70b5;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    border: 2px solid #000;
+    background-color: #879fed;
+    border-radius: 10px;
+    color: #000;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input{
+    background-color: #dcdcdc;
+    color:#000;
+    padding: 10px;
+}
+
+#name-input, #show-greeting-btn {
+    display: none;
+    margin-top: 10px;
+}

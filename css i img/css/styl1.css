@@ -1,0 +1,60 @@
+h3{
+    font-family:Arial;
+}
+
+#container{
+    width: 700px;
+    margin: 0 auto;
+}
+
+#page{
+    font-size: 150%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid rgb(20, 80, 220);
+    background-color: rgb(156, 230, 241);
+}
+#paragrafy{
+    font-size: 120%;
+    color: darkslategray;
+}
+
+ul{
+    margin: 20px;
+    list-style-image: url('../images/code.png');
+}
+li{
+    padding: 5px;
+    margin-bottom:2px;
+}
+.info{
+    font-size: 80%;
+    color: grey;
+}
+
+img{
+    width: 300px;
+}
+
+table.customTable {
+    width: 80%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #6F94DB;
+    border-style: solid;
+    color: #363636;
+  }
+  
+  table.customTable td, table.customTable th {
+    border-width: 2px;
+    border-color: #6F94DB;
+    border-style: solid;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  table.customTable thead {
+    background-color: #91B1F8;
+  }

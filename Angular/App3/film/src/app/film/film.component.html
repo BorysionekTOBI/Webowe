@@ -1,0 +1,31 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="filmTitle">Tytuł filmu</label>
+            <input type="text" class="form-control" [(ngModel)]="filmTitle" id="filmTitle" name="filmTitle" required>
+        </div>
+        <div class="form-group">
+            <label for="filmCategory">Rodzaj filmu</label>
+            <select id="filmCategory" class="form-control" [(ngModel)]="filmCategory" name="filmCategory" required>
+                <!-- <option value=""></option>
+                <option value="Komedia">Komedia</option>
+                <option value="Obyczajowy">Obyczajowy</option>
+                <option value="Sensacyjny">Sensacyjny</option>
+                <option value="Horror">Horror</option>                 -->
+                <option *ngFor = "let cat of filmCategories" value="{{cat}}">{{cat}}</option>
+            </select>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" (click)="addFilm()" >Dodaj</button>
+    </form>
+    <br>
+    <p>{{wynik}}</p>
+    
+    <div class="form-group">
+        <label for="filmCategory">Kategoria</label>
+        <input type="text" class="form-control" [(ngModel)]="newCategory" id="filmCategory" name="newCategory" required>
+        <br>
+        <button type="button" class="btn btn-primary" (click)="addCategory()">Dodaj kategorie</button>
+    </div>
+    <br>
+</div>
