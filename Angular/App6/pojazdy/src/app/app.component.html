@@ -1,0 +1,52 @@
+<div class="container">
+  <!-- Wyświetlanie formularza -->
+  <div class="col-md-6">
+    <h3>Rejestracja pojazdów</h3>
+    <div class="card mt-3">
+      <div class="card-body">
+        <div class="card-body">
+          <h5 class="card-title">Dodawanie pojazdów</h5>
+         
+          <form (ngSubmit)="addPojazd()">
+            <div class="form-group">
+              <label for="marka">Marka:</label>
+              <input type="text" id="marka" name="marka" class="form-control" [(ngModel)]="pojazd.marka" required/>
+            </div>
+            <div class="form-group">
+              <label for="model">Model:</label>
+              <input type="text" id="model" name="model" class="form-control" [(ngModel)]="pojazd.model" required/>
+            </div>
+            <div class="form-group">
+              <label for="numer_rejestracyjny">Numer rejestracyjny:</label>
+              <input type="text" id="numer_rejestracyjny" name="numer_rejestracyjny" class="form-control" [(ngModel)]="pojazd.numer_rejestracyjny" required/>
+            </div>
+            <div class="form-group">
+              <label for="wlasciciel">Właściciel:</label>
+              <input type="text" id="wlasciciel" name="wlasciciel" class="form-control" [(ngModel)]="pojazd.wlasciciel" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" class="form-control" [(ngModel)]="pojazd.email" required/>
+            </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Dodaj samochód</button>
+          </form>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Wyświerlanie pojazdów -->
+  <div class="col-md-6">
+    <h3>Lista pojazdów</h3>
+    <div class="card mt-3" *ngFor="let pojazd of pojazdy">
+      <div class="card-body">
+        <h5 class="card-title">{{pojazd.marka}} {{pojazd.model}}</h5>
+        <p class="card-text">Numer: {{pojazd.numer_rejestracyjny}}</p>
+        <p class="card-text">Właściciel: {{pojazd.wlasciciel}}</p>
+        <p class="card-text">Email: {{pojazd.email}}</p>
+        </div>
+    </div>
+  </div>
+</div>
